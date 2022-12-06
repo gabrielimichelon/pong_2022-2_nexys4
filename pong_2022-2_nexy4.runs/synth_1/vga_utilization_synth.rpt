@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1.2 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date         : Mon Dec  5 23:12:58 2022
+| Date         : Mon Dec  5 23:57:51 2022
 | Host         : Gabrieli running 64-bit major release  (build 9200)
 | Command      : report_utilization -file vga_utilization_synth.rpt -pb vga_utilization_synth.pb
 | Design       : vga
@@ -147,13 +147,13 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT2     |  261 |                 LUT |
-| LUT4     |  236 |                 LUT |
+| LUT2     |  260 |                 LUT |
+| LUT4     |  235 |                 LUT |
 | CARRY4   |  156 |          CarryLogic |
 | LUT1     |  123 |                 LUT |
 | FDCE     |  105 |        Flop & Latch |
-| LUT6     |   41 |                 LUT |
-| LUT5     |   36 |                 LUT |
+| LUT6     |   42 |                 LUT |
+| LUT5     |   35 |                 LUT |
 | FDRE     |   35 |        Flop & Latch |
 | FDPE     |   32 |        Flop & Latch |
 | OBUF     |   14 |                  IO |
