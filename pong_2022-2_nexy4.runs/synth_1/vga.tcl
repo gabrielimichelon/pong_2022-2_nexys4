@@ -91,6 +91,7 @@ OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
   C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/control_unit.vhd
+  C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/keyboard_control.vhd
   C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/memory.vhd
   C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/vga.vhd
 }

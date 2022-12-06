@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1.2 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date         : Mon Dec  5 23:58:27 2022
+| Date         : Tue Dec  6 08:07:04 2022
 | Host         : Gabrieli running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file vga_control_sets_placed.rpt
 | Design       : vga
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    15 |
-|    Minimum number of control sets                        |    15 |
+| Total control sets                                       |    20 |
+|    Minimum number of control sets                        |    20 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    67 |
+| Unused register locations in slices containing registers |    88 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,11 +39,11 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    15 |
-| >= 0 to < 4        |     5 |
-| >= 4 to < 6        |     4 |
+| Total control sets |    20 |
+| >= 0 to < 4        |     7 |
+| >= 4 to < 6        |     6 |
 | >= 6 to < 8        |     0 |
-| >= 8 to < 10       |     0 |
+| >= 8 to < 10       |     1 |
 | >= 10 to < 12      |     0 |
 | >= 12 to < 14      |     0 |
 | >= 14 to < 16      |     2 |
@@ -58,36 +58,41 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               2 |            2 |
+| No           | No                    | No                     |               9 |            5 |
 | No           | No                    | Yes                    |              21 |            8 |
 | No           | Yes                   | No                     |               0 |            0 |
-| Yes          | No                    | No                     |               4 |            1 |
-| Yes          | No                    | Yes                    |             116 |           38 |
-| Yes          | Yes                   | No                     |              38 |           13 |
+| Yes          | No                    | No                     |              12 |            5 |
+| Yes          | No                    | Yes                    |             116 |           40 |
+| Yes          | Yes                   | No                     |              42 |           14 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+---------------------+----------------------+---------------------+------------------+----------------+--------------+
-|     Clock Signal    |     Enable Signal    |   Set/Reset Signal  | Slice Load Count | Bel Load Count | Bels / Slice |
-+---------------------+----------------------+---------------------+------------------+----------------+--------------+
-|  clk25_reg_n_0_BUFG | p_0_in               | VGA_HSYNC0          |                1 |              1 |         1.00 |
-|  clk25_reg_n_0_BUFG | p_0_in               | VGA_VSYNC0          |                1 |              1 |         1.00 |
-|  clk50              |                      |                     |                1 |              1 |         1.00 |
-|  clk_IBUF_BUFG      |                      |                     |                1 |              1 |         1.00 |
-|  clk_IBUF_BUFG      |                      | rst_IBUF            |                1 |              2 |         2.00 |
-|  clk25_reg_n_0_BUFG | RED_OUT[3]_i_2_n_0   |                     |                1 |              4 |         4.00 |
-|  clk25_reg_n_0_BUFG | RED_OUT[3]_i_2_n_0   | BLUE_OUT0           |                1 |              4 |         4.00 |
-|  clk25_reg_n_0_BUFG | RED_OUT[3]_i_2_n_0   | RED_OUT[3]_i_1_n_0  |                2 |              4 |         2.00 |
-|  clk_IBUF_BUFG      | uc/__0/i__n_0        | rst_IBUF            |                1 |              4 |         4.00 |
-|  clk25_reg_n_0_BUFG | horizontal_counter0  | vertical_counter0   |                4 |             14 |         3.50 |
-|  clk25_reg_n_0_BUFG | p_0_in               | horizontal_counter0 |                4 |             14 |         3.50 |
-|  clk25_reg_n_0_BUFG |                      | rst_IBUF            |                7 |             19 |         2.71 |
-|  clk25_reg_n_0_BUFG | playerPosition_YA    | rst_IBUF            |                8 |             28 |         3.50 |
-|  clk25_reg_n_0_BUFG | playerTwoPosition_YA | rst_IBUF            |                8 |             28 |         3.50 |
-|  clk25_reg_n_0_BUFG | ballPosition_XB0     | rst_IBUF            |               21 |             56 |         2.67 |
-+---------------------+----------------------+---------------------+------------------+----------------+--------------+
++----------------------------+-----------------------+----------------------------+------------------+----------------+--------------+
+|        Clock Signal        |     Enable Signal     |      Set/Reset Signal      | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------------+-----------------------+----------------------------+------------------+----------------+--------------+
+|  clk50                     |                       |                            |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG             |                       |                            |                1 |              1 |         1.00 |
+|  clk25_reg_n_0_BUFG        | p_0_in                | VGA_VSYNC0                 |                1 |              1 |         1.00 |
+|  clk25_reg_n_0_BUFG        | p_0_in                | VGA_HSYNC0                 |                1 |              1 |         1.00 |
+| ~KeyboardClock_IBUF_BUFG   |                       |                            |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG             |                       | rst_IBUF                   |                1 |              2 |         2.00 |
+|  clk25_reg_n_0_BUFG        |                       |                            |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG             | uc/__0/i__n_0         | rst_IBUF                   |                1 |              4 |         4.00 |
+|  clk25_reg_n_0_BUFG        | RED_OUT[3]_i_2_n_0    |                            |                1 |              4 |         4.00 |
+|  clk25_reg_n_0_BUFG        | RED_OUT[3]_i_2_n_0    | BLUE_OUT0                  |                1 |              4 |         4.00 |
+|  clk25_reg_n_0_BUFG        | RED_OUT[3]_i_2_n_0    | RED_OUT[3]_i_1_n_0         |                1 |              4 |         4.00 |
+|  keyboard/scancodeReady__0 |                       |                            |                1 |              4 |         4.00 |
+| ~KeyboardClock_IBUF_BUFG   | keyboard/bitCount_n_0 | keyboard/scancodeReady0__0 |                2 |              4 |         2.00 |
+| ~KeyboardClock_IBUF_BUFG   | keyboard/scancode     |                            |                4 |              8 |         2.00 |
+|  clk25_reg_n_0_BUFG        | horizontal_counter0   | vertical_counter0          |                4 |             14 |         3.50 |
+|  clk25_reg_n_0_BUFG        | p_0_in                | horizontal_counter0        |                4 |             14 |         3.50 |
+|  clk25_reg_n_0_BUFG        |                       | rst_IBUF                   |                7 |             19 |         2.71 |
+|  clk25_reg_n_0_BUFG        | playerPosition_YA     | rst_IBUF                   |                8 |             28 |         3.50 |
+|  clk25_reg_n_0_BUFG        | playerTwoPosition_YA  | rst_IBUF                   |                8 |             28 |         3.50 |
+|  clk25_reg_n_0_BUFG        | ballPosition_XB0      | rst_IBUF                   |               23 |             56 |         2.43 |
++----------------------------+-----------------------+----------------------------+------------------+----------------+--------------+
 
 

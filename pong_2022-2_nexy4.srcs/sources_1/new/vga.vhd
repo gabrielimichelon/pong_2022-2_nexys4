@@ -7,10 +7,12 @@ use IEEE.NUMERIC_STD.ALL;
 entity vga is
     Port (    clk : in  STD_LOGIC;
               rst : in  STD_LOGIC;
-              PONG_LEFT_MV_UP_1 : in std_logic;
-              PONG_RIGHT_MV_DOWN_2 : in std_logic;
-              PONG_UP_MV_UP_2 : in std_logic;
-              PONG_DOWN_MV_DOWN_1 : in std_logic;
+              PONG_LEFT_MV_DOWN_1 : in std_logic;
+              PONG_RIGHT_MV_UP_2 : in std_logic;
+              PONG_UP_MV_UP_1 : in std_logic;
+              PONG_DOWN_MV_DOWN_2 : in std_logic;
+              KeyboardClock : in std_logic;
+              KeyboardData : in std_logic;
 			  RED_OUT : out std_logic_vector(3 downto 0);
               GREEN_OUT : out std_logic_vector(3 downto 0);
               BLUE_OUT : out std_logic_vector(3 downto 0);
@@ -44,6 +46,13 @@ port (
 );
 END component;
 
+component KeyboardController is
+    port (KeyboardClock : in  std_logic;
+          KeyboardData  : in  std_logic;
+          Detect        : out std_logic_vector(2 downto 0)
+          );
+  end component KeyboardController;
+
 signal clk50, clk25 		: STD_LOGIC;
 signal horizontal_counter   : STD_LOGIC_VECTOR (13 downto 0);
 signal vertical_counter     : STD_LOGIC_VECTOR (13 downto 0);
@@ -51,6 +60,8 @@ signal count 		 		: INTEGER range 0 to 100001;
 signal countButton 		: INTEGER range 0 to 100001;
 signal v : INTEGER range 0 to 1;
 signal h : INTEGER range 0 to 1;
+signal Detect : STD_LOGIC_VECTOR(2 downto 0);
+signal key_flag: STD_LOGIC_VECTOR(1 downto 0);
 signal screenSize_horizontalA  : STD_LOGIC_VECTOR (13 downto 0);
 signal ScreenSize_horizontalB  : STD_LOGIC_VECTOR (13 downto 0);
 signal ScreenSize_verticalA : STD_LOGIC_VECTOR (13 downto 0);
@@ -92,6 +103,12 @@ signal start:  std_logic;
 
 begin
 
+    keyboard : KeyboardController 
+        port map(
+            KeyboardClock => KeyboardClock,
+            KeyboardData => KeyboardData,
+            Detect => Detect
+            );
 	uc:control_unit port map (clk,rst,sdout,srw,saddr,sdin,start);
 	mem:memory port map(clk,rst,srw,saddr,sdin,sdout);
 --Processos clk e clk50 utilizados somente para diminuio da frequencia do clock
@@ -164,9 +181,21 @@ begin
 		countButton               <= 0; 
 		count                     <= 0;
 		v                         <= 0;
-		h                         <= 0;		
+		h                         <= 0;
 		
 	elsif clk25'event and clk25 = '1' then
+	
+        if (Detect = "001") then    --- press A to UP Player 1
+              key_flag <= "10";
+        elsif (Detect = "010") then   --- press Z to Down Player 1
+          key_flag <= "00";
+        elsif (Detect = "011") then   --- press K to UP Player 2
+          key_flag <= "11";
+        elsif (Detect = "100") then   --- press M to Down Player 2
+          key_flag <= "01";
+        else
+          key_flag <= key_flag;
+        end if;
 		
 		if (horizontal_counter >= screenSize_horizontalA ) and (horizontal_counter < ScreenSize_horizontalB ) and 
 		   (vertical_counter >= ScreenSize_verticalA ) and (vertical_counter < ScreenSize_verticalB ) then 
@@ -235,22 +264,22 @@ begin
 		end if;
 		
 		if (countButton = 100000) then
-			if (PONG_UP_MV_UP_2 = '1') and (playerPosition_YA - valueIncrementDrecrement > ScreenBoard_verticalA) then
+			if ((PONG_UP_MV_UP_1 = '1') or (key_flag = "10")) and (playerPosition_YA - valueIncrementDrecrement > ScreenBoard_verticalA) then
 				playerPosition_YA <= playerPosition_YA - valueIncrementDrecrement;
 				playerPosition_YB <= playerPosition_YB - valueIncrementDrecrement;
 			end if;
 			
-			if (PONG_LEFT_MV_UP_1 = '1') and (playerPosition_YB + valueIncrementDrecrement < ScreenBoard_verticalB) then
+			if ((PONG_LEFT_MV_DOWN_1 = '1') or (key_flag = "00")) and (playerPosition_YB + valueIncrementDrecrement < ScreenBoard_verticalB) then
 				playerPosition_YA <= playerPosition_YA + valueIncrementDrecrement;
 				playerPosition_YB <= playerPosition_YB + valueIncrementDrecrement;
 			end if;
 			
-			if (PONG_RIGHT_MV_DOWN_2 = '1') and (playerTwoPosition_YA - valueIncrementDrecrement > ScreenBoard_verticalA) then
+			if ((PONG_RIGHT_MV_UP_2 = '1') or (key_flag = "11")) and (playerTwoPosition_YA - valueIncrementDrecrement > ScreenBoard_verticalA) then
 				playerTwoPosition_YA <= playerTwoPosition_YA - valueIncrementDrecrement;
 				playerTwoPosition_YB <= playerTwoPosition_YB - valueIncrementDrecrement;
 			end if;
 			
-			if (PONG_DOWN_MV_DOWN_1 = '1') and (playerTwoPosition_YB + valueIncrementDrecrement < ScreenBoard_verticalB) then
+			if ((PONG_DOWN_MV_DOWN_2 = '1') or (key_flag = "01")) and (playerTwoPosition_YB + valueIncrementDrecrement < ScreenBoard_verticalB) then
 				playerTwoPosition_YA <= playerTwoPosition_YA + valueIncrementDrecrement;
 				playerTwoPosition_YB <= playerTwoPosition_YB + valueIncrementDrecrement;
 			end if;
