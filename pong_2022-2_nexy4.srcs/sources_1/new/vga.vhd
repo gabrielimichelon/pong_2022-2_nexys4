@@ -131,7 +131,7 @@ begin
 		ScreenSize_verticalB      <= "00010000111000"; -- 1080
 		
 		ScreenBoard_horizontalA   <= "00000010010110"; -- 150 --
-		ScreenBoard_horizontalB   <= "00011101100010"; -- 1890
+		ScreenBoard_horizontalB   <= "00001011111000"; -- 760
 		ScreenBoard_verticalA     <= "00000000101000"; -- 40 -- vertical back porch = 36
 		ScreenBoard_verticalB     <= "00000111111110"; -- 510
 
