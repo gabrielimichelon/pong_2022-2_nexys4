@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.1.2 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date             : Mon Dec  5 23:59:00 2022
+| Date             : Tue Dec  6 10:01:14 2022
 | Host             : Gabrieli running 64-bit major release  (build 9200)
 | Command          : report_power -file vga_power_routed.rpt -pb vga_power_summary_routed.pb -rpx vga_power_routed.rpx
 | Design           : vga
@@ -53,14 +53,14 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |     0.003 |     1043 |       --- |             --- |
-|   LUT as Logic |     0.002 |      508 |     63400 |            0.80 |
+| Slice Logic    |     0.003 |     1081 |       --- |             --- |
+|   LUT as Logic |     0.002 |      523 |     63400 |            0.82 |
 |   CARRY4       |    <0.001 |      156 |     15850 |            0.98 |
-|   BUFG         |    <0.001 |        1 |        32 |            3.13 |
-|   Register     |    <0.001 |      181 |    126800 |            0.14 |
-|   Others       |     0.000 |        4 |       --- |             --- |
-| Signals        |     0.002 |      556 |       --- |             --- |
-| I/O            |    <0.001 |       20 |       210 |            9.52 |
+|   BUFG         |    <0.001 |        2 |        32 |            6.25 |
+|   Register     |    <0.001 |      200 |    126800 |            0.16 |
+|   Others       |     0.000 |        6 |       --- |             --- |
+| Signals        |     0.002 |      588 |       --- |             --- |
+| I/O            |    <0.001 |       22 |       210 |           10.48 |
 | Static Power   |     0.097 |          |           |                 |
 | Total          |     0.103 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
