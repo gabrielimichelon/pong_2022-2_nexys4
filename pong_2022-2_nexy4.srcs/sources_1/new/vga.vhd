@@ -5,14 +5,18 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
 entity vga is
+--    generic (VFP );
     Port (    clk : in  STD_LOGIC;
               rst : in  STD_LOGIC;
+--              CA  : in std_logic;
+--              CB  : in std_logic;
               PONG_LEFT_MV_DOWN_1 : in std_logic;
               PONG_RIGHT_MV_UP_2 : in std_logic;
               PONG_UP_MV_UP_1 : in std_logic;
               PONG_DOWN_MV_DOWN_2 : in std_logic;
               KeyboardClock : in std_logic;
               KeyboardData : in std_logic;
+--              AN : out std_logic_vector(6 downto 0);
 			  RED_OUT : out std_logic_vector(3 downto 0);
               GREEN_OUT : out std_logic_vector(3 downto 0);
               BLUE_OUT : out std_logic_vector(3 downto 0);
@@ -33,7 +37,7 @@ port (
 	din: out std_logic_vector(9 downto 0);
 	start : out std_logic
 );
-END component;
+END component control_unit;
 
 component memory  
 port (
@@ -44,7 +48,21 @@ port (
 	  din: in std_logic_vector(9 downto 0);
 	  dout: out std_logic_vector(9 downto 0) 
 );
-END component;
+END component memory;
+
+component KeyboardController is
+    port (KeyboardClock : in  std_logic;
+          KeyboardData  : in  std_logic;
+          Detect        : out std_logic_vector(2 downto 0)
+          );
+end component KeyboardController;
+  
+--component seven_seg_display is 
+--    port (
+--    	input   : in integer range 0 to 9;
+--    	seg_out : out std_logic_vector(6 downto 0)
+--    );
+--end component seven_seg_display;
 
 component KeyboardController is
     port (KeyboardClock : in  std_logic;
@@ -60,6 +78,8 @@ signal count 		 		: INTEGER range 0 to 100001;
 signal countButton 		: INTEGER range 0 to 100001;
 signal v : INTEGER range 0 to 1;
 signal h : INTEGER range 0 to 1;
+--signal player_a_score : integer range 0 to 9:= 0;
+--signal player_b_score  : integer range 0 to 9:= 0;
 signal Detect : STD_LOGIC_VECTOR(2 downto 0);
 signal key_flag: STD_LOGIC_VECTOR(1 downto 0);
 signal screenSize_horizontalA  : STD_LOGIC_VECTOR (13 downto 0);
@@ -103,12 +123,14 @@ signal start:  std_logic;
 
 begin
 
-    keyboard : KeyboardController 
+    keyboard_control : KeyboardController 
         port map(
             KeyboardClock => KeyboardClock,
             KeyboardData => KeyboardData,
             Detect => Detect
             );
+--    left_player_score_display  : seven_seg_display port map (player_a_score, AN);
+--	right_player_score_display : seven_seg_display port map (player_b_score, AN);
 	uc:control_unit port map (clk,rst,sdout,srw,saddr,sdin,start);
 	mem:memory port map(clk,rst,srw,saddr,sdin,sdout);
 --Processos clk e clk50 utilizados somente para diminuio da frequencia do clock
@@ -319,6 +341,7 @@ begin
 			ballPosition_XB <= "00000111000111";       
 			ballPosition_YA <= "00000011011100";
 			ballPosition_YB <= "00000011100110";
+--			player_a_score <= player_a_score + 1;
 		end if;
 		
 		if (ballPosition_YB + valueIncrementDrecrement > ScreenBoard_verticalB) and (v = 0) then
@@ -340,6 +363,7 @@ begin
 			ballPosition_XB <= "00000111000111";       
 			ballPosition_YA <= "00000011011100";
 			ballPosition_YB <= "00000011100110";
+--			player_b_score <= player_b_score + 1;
 		end if;
 		
 

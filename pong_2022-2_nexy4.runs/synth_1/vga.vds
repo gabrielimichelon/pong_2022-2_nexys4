@@ -2,8 +2,8 @@
 # Vivado v2022.1.2 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3603185 on Sat Aug  6 04:07:44 MDT 2022
-# Start of session at: Tue Dec  6 08:05:41 2022
-# Process ID: 3960
+# Start of session at: Tue Dec  6 11:15:07 2022
+# Process ID: 36152
 # Current directory: C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.runs/synth_1
 # Command line: vivado.exe -log vga.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vga.tcl
 # Log file: C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.runs/synth_1/vga.vds
@@ -23,35 +23,35 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 34868
+INFO: [Synth 8-7075] Helper process launched with PID 32296
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1645.133 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1626.086 ; gain = 0.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'vga' [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/vga.vhd:24]
-INFO: [Synth 8-3491] module 'KeyboardController' declared at 'C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/keyboard_control.vhd:25' bound to instance 'keyboard' of component 'KeyboardController' [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/vga.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'vga' [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/vga.vhd:28]
+INFO: [Synth 8-3491] module 'KeyboardController' declared at 'C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/keyboard_control.vhd:25' bound to instance 'keyboard_control' of component 'KeyboardController' [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/vga.vhd:119]
 INFO: [Synth 8-638] synthesizing module 'KeyboardController' [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/keyboard_control.vhd:32]
 INFO: [Synth 8-256] done synthesizing module 'KeyboardController' (0#1) [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/keyboard_control.vhd:32]
-INFO: [Synth 8-3491] module 'control_unit' declared at 'C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/control_unit.vhd:26' bound to instance 'uc' of component 'control_unit' [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/vga.vhd:112]
+INFO: [Synth 8-3491] module 'control_unit' declared at 'C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/control_unit.vhd:26' bound to instance 'uc' of component 'control_unit' [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/vga.vhd:127]
 INFO: [Synth 8-638] synthesizing module 'control_unit' [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/control_unit.vhd:38]
 INFO: [Synth 8-256] done synthesizing module 'control_unit' (0#1) [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/control_unit.vhd:38]
-INFO: [Synth 8-3491] module 'memory' declared at 'C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/memory.vhd:26' bound to instance 'mem' of component 'memory' [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/vga.vhd:113]
+INFO: [Synth 8-3491] module 'memory' declared at 'C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/memory.vhd:26' bound to instance 'mem' of component 'memory' [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/vga.vhd:128]
 INFO: [Synth 8-638] synthesizing module 'memory' [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/memory.vhd:37]
 INFO: [Synth 8-256] done synthesizing module 'memory' (0#1) [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/memory.vhd:37]
-INFO: [Synth 8-256] done synthesizing module 'vga' (0#1) [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/vga.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'vga' (0#1) [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/vga.vhd:28]
 WARNING: [Synth 8-6014] Unused sequential element fase_reg was removed.  [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/control_unit.vhd:76]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1661.000 ; gain = 15.867
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1660.277 ; gain = 34.191
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1661.000 ; gain = 15.867
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1660.277 ; gain = 34.191
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1661.000 ; gain = 15.867
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1660.277 ; gain = 34.191
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1661.000 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1660.277 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -62,28 +62,28 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/vga_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1738.594 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1733.223 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1738.594 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1733.223 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1738.594 ; gain = 93.461
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1733.223 ; gain = 107.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1738.594 ; gain = 93.461
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1733.223 ; gain = 107.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1738.594 ; gain = 93.461
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1733.223 ; gain = 107.137
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'estado_reg' in module 'control_unit'
 ---------------------------------------------------------------------------------------------------
@@ -96,22 +96,22 @@ INFO: [Synth 8-802] inferred FSM for state register 'estado_reg' in module 'cont
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'estado_reg' using encoding 'one-hot' in module 'control_unit'
 WARNING: [Synth 8-327] inferring latch for variable 'din_reg' [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/control_unit.vhd:73]
-WARNING: [Synth 8-327] inferring latch for variable 'valueIncrementDrecrement_reg' [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/vga.vhd:179]
-WARNING: [Synth 8-327] inferring latch for variable 'ScreenBoard_verticalB_reg' [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/vga.vhd:153]
-WARNING: [Synth 8-327] inferring latch for variable 'ScreenBoard_verticalA_reg' [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/vga.vhd:152]
-WARNING: [Synth 8-327] inferring latch for variable 'ScreenBoard_horizontalB_reg' [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/vga.vhd:151]
-WARNING: [Synth 8-327] inferring latch for variable 'playerTwoPosition_XA_reg' [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/vga.vhd:167]
-WARNING: [Synth 8-327] inferring latch for variable 'playerPosition_XB_reg' [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/vga.vhd:163]
-WARNING: [Synth 8-327] inferring latch for variable 'ScreenBoard_horizontalA_reg' [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/vga.vhd:150]
-WARNING: [Synth 8-327] inferring latch for variable 'line_XA_reg' [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/vga.vhd:173]
-WARNING: [Synth 8-327] inferring latch for variable 'line_XB_reg' [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/vga.vhd:174]
-WARNING: [Synth 8-327] inferring latch for variable 'playerPosition_XA_reg' [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/vga.vhd:162]
-WARNING: [Synth 8-327] inferring latch for variable 'playerTwoPosition_XB_reg' [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/vga.vhd:168]
-WARNING: [Synth 8-327] inferring latch for variable 'ScreenSize_verticalB_reg' [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/vga.vhd:148]
-WARNING: [Synth 8-327] inferring latch for variable 'ScreenSize_horizontalB_reg' [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/vga.vhd:146]
-WARNING: [Synth 8-327] inferring latch for variable 'screenSize_horizontalA_reg' [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/vga.vhd:145]
+WARNING: [Synth 8-327] inferring latch for variable 'valueIncrementDrecrement_reg' [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/vga.vhd:194]
+WARNING: [Synth 8-327] inferring latch for variable 'ScreenBoard_verticalB_reg' [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/vga.vhd:168]
+WARNING: [Synth 8-327] inferring latch for variable 'ScreenBoard_verticalA_reg' [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/vga.vhd:167]
+WARNING: [Synth 8-327] inferring latch for variable 'ScreenBoard_horizontalB_reg' [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/vga.vhd:166]
+WARNING: [Synth 8-327] inferring latch for variable 'playerTwoPosition_XA_reg' [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/vga.vhd:182]
+WARNING: [Synth 8-327] inferring latch for variable 'playerPosition_XB_reg' [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/vga.vhd:178]
+WARNING: [Synth 8-327] inferring latch for variable 'ScreenBoard_horizontalA_reg' [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/vga.vhd:165]
+WARNING: [Synth 8-327] inferring latch for variable 'line_XA_reg' [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/vga.vhd:188]
+WARNING: [Synth 8-327] inferring latch for variable 'line_XB_reg' [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/vga.vhd:189]
+WARNING: [Synth 8-327] inferring latch for variable 'playerPosition_XA_reg' [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/vga.vhd:177]
+WARNING: [Synth 8-327] inferring latch for variable 'playerTwoPosition_XB_reg' [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/vga.vhd:183]
+WARNING: [Synth 8-327] inferring latch for variable 'ScreenSize_verticalB_reg' [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/vga.vhd:163]
+WARNING: [Synth 8-327] inferring latch for variable 'ScreenSize_horizontalB_reg' [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/vga.vhd:161]
+WARNING: [Synth 8-327] inferring latch for variable 'screenSize_horizontalA_reg' [C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.srcs/sources_1/new/vga.vhd:160]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1738.594 ; gain = 93.461
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1733.223 ; gain = 107.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -159,25 +159,25 @@ WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 WARNING: [Synth 8-3332] Sequential element (playerTwoPosition_XA_reg[9]) is unused and will be removed from module vga.
 WARNING: [Synth 8-3332] Sequential element (playerTwoPosition_XA_reg[13]) is unused and will be removed from module vga.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1738.594 ; gain = 93.461
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1733.223 ; gain = 107.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1738.594 ; gain = 93.461
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1733.223 ; gain = 107.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1738.594 ; gain = 93.461
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1733.223 ; gain = 107.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1738.594 ; gain = 93.461
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1733.223 ; gain = 107.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -195,37 +195,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1738.594 ; gain = 93.461
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1733.223 ; gain = 107.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1738.594 ; gain = 93.461
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1733.223 ; gain = 107.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1738.594 ; gain = 93.461
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1733.223 ; gain = 107.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1738.594 ; gain = 93.461
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1733.223 ; gain = 107.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1738.594 ; gain = 93.461
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1733.223 ; gain = 107.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1738.594 ; gain = 93.461
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1733.223 ; gain = 107.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -257,27 +257,27 @@ Report Cell Usage:
 |14    |OBUF   |    14|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1738.594 ; gain = 93.461
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1733.223 ; gain = 107.137
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 18 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:29 . Memory (MB): peak = 1738.594 ; gain = 15.867
-Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1738.594 ; gain = 93.461
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:30 . Memory (MB): peak = 1733.223 ; gain = 34.191
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1733.223 ; gain = 107.137
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1738.594 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1733.223 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 156 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 WARNING: [Netlist 29-101] Netlist 'vga' is not ideal for floorplanning, since the cellview 'vga' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1738.594 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1733.223 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: 5e7ce6e8
+Synth Design complete, checksum: 180c2b7a
 INFO: [Common 17-83] Releasing license: Synthesis
 34 Infos, 20 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1738.594 ; gain = 93.461
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:40 . Memory (MB): peak = 1733.223 ; gain = 107.137
 INFO: [Common 17-1381] The checkpoint 'C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.runs/synth_1/vga.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file vga_utilization_synth.rpt -pb vga_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Dec  6 08:06:23 2022...
+INFO: [Common 17-206] Exiting Vivado at Tue Dec  6 11:15:59 2022...

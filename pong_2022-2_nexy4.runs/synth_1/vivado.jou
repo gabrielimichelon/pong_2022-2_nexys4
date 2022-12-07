@@ -2,8 +2,8 @@
 # Vivado v2022.1.2 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3603185 on Sat Aug  6 04:07:44 MDT 2022
-# Start of session at: Tue Dec  6 08:05:41 2022
-# Process ID: 3960
+# Start of session at: Tue Dec  6 11:15:07 2022
+# Process ID: 36152
 # Current directory: C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.runs/synth_1
 # Command line: vivado.exe -log vga.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vga.tcl
 # Log file: C:/Users/gabyz/Desktop/projeto_de_si/pong_2022-2_nexy4/pong_2022-2_nexy4.runs/synth_1/vga.vds

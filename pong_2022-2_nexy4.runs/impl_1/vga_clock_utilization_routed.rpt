@@ -1,7 +1,11 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1.2 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+<<<<<<< HEAD
+| Date         : Tue Dec  6 12:09:17 2022
+=======
 | Date         : Tue Dec  6 08:07:37 2022
+>>>>>>> main
 | Host         : Gabrieli running 64-bit major release  (build 9200)
 | Command      : report_clock_utilization -file vga_clock_utilization_routed.rpt
 | Design       : vga
@@ -73,12 +77,21 @@ Table of Contents
 4. Local Clock Details
 ----------------------
 
+<<<<<<< HEAD
++----------+-----------------+------------+------------------+--------------+-------------+-----------------+--------------+-------+--------------------------------------+-----------------------------------+
+| Local Id | Driver Type/Pin | Constraint | Site/BEL         | Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock | Driver Pin                           | Net                               |
++----------+-----------------+------------+------------------+--------------+-------------+-----------------+--------------+-------+--------------------------------------+-----------------------------------||
+| 0        | FDRE/Q          | None       | SLICE_X85Y98/AFF | X1Y1         |           4 |               1 |              |       | keyboard_control/scancodeReady_reg/Q | keyboard_control/scancodeReady__0 - Static -
+| 1        | FDRE/Q          | None       | SLICE_X52Y99/AFF | X1Y1         |           1 |               1 |              |       | clk50_reg/Q                          | clk50                             - Static -
++----------+-----------------+------------+------------------+--------------+-------------+-----------------+--------------+-------+--------------------------------------+-----------------------------------||
+=======
 +----------+-----------------+------------+------------------+--------------+-------------+-----------------+--------------+-------+------------------------------+---------------------------+
 | Local Id | Driver Type/Pin | Constraint | Site/BEL         | Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock | Driver Pin                   | Net                       |
 +----------+-----------------+------------+------------------+--------------+-------------+-----------------+--------------+-------+------------------------------+---------------------------||
 | 0        | FDRE/Q          | None       | SLICE_X85Y98/AFF | X1Y1         |           4 |               1 |              |       | keyboard/scancodeReady_reg/Q | keyboard/scancodeReady__0 - Static -
 | 1        | FDRE/Q          | None       | SLICE_X52Y99/AFF | X1Y1         |           1 |               1 |              |       | clk50_reg/Q                  | clk50                     - Static -
 +----------+-----------------+------------+------------------+--------------+-------------+-----------------+--------------+-------+------------------------------+---------------------------||
+>>>>>>> main
 * Local Clocks in this context represents only clocks driven by non-global buffers
 ** Clock Loads column represents the clock pin loads (pin count). Internal cell leaf pins are not counted
 *** Non-Clock Loads column represents the non-clock pin loads (pin count)

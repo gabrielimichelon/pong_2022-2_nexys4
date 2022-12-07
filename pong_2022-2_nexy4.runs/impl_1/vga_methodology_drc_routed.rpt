@@ -1,7 +1,11 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1.2 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+<<<<<<< HEAD
+| Date         : Tue Dec  6 12:09:16 2022
+=======
 | Date         : Tue Dec  6 08:07:36 2022
+>>>>>>> main
 | Host         : Gabrieli running 64-bit major release  (build 9200)
 | Command      : report_methodology -file vga_methodology_drc_routed.rpt -pb vga_methodology_drc_routed.pb -rpx vga_methodology_drc_routed.rpx
 | Design       : vga
@@ -560,87 +564,155 @@ Related violations: <none>
 
 TIMING-17#106 Critical Warning
 Non-clocked sequential cell  
+<<<<<<< HEAD
+The clock pin keyboard_control/KDetected_reg[0]/C is not reached by a timing clock
+=======
 The clock pin keyboard/KDetected_reg[0]/C is not reached by a timing clock
+>>>>>>> main
 Related violations: <none>
 
 TIMING-17#107 Critical Warning
 Non-clocked sequential cell  
+<<<<<<< HEAD
+The clock pin keyboard_control/KDetected_reg[1]/C is not reached by a timing clock
+=======
 The clock pin keyboard/KDetected_reg[1]/C is not reached by a timing clock
+>>>>>>> main
 Related violations: <none>
 
 TIMING-17#108 Critical Warning
 Non-clocked sequential cell  
+<<<<<<< HEAD
+The clock pin keyboard_control/KDetected_reg[2]/C is not reached by a timing clock
+=======
 The clock pin keyboard/KDetected_reg[2]/C is not reached by a timing clock
+>>>>>>> main
 Related violations: <none>
 
 TIMING-17#109 Critical Warning
 Non-clocked sequential cell  
+<<<<<<< HEAD
+The clock pin keyboard_control/bitCount_reg[0]/C is not reached by a timing clock
+=======
 The clock pin keyboard/bitCount_reg[0]/C is not reached by a timing clock
+>>>>>>> main
 Related violations: <none>
 
 TIMING-17#110 Critical Warning
 Non-clocked sequential cell  
+<<<<<<< HEAD
+The clock pin keyboard_control/bitCount_reg[1]/C is not reached by a timing clock
+=======
 The clock pin keyboard/bitCount_reg[1]/C is not reached by a timing clock
+>>>>>>> main
 Related violations: <none>
 
 TIMING-17#111 Critical Warning
 Non-clocked sequential cell  
+<<<<<<< HEAD
+The clock pin keyboard_control/bitCount_reg[2]/C is not reached by a timing clock
+=======
 The clock pin keyboard/bitCount_reg[2]/C is not reached by a timing clock
+>>>>>>> main
 Related violations: <none>
 
 TIMING-17#112 Critical Warning
 Non-clocked sequential cell  
+<<<<<<< HEAD
+The clock pin keyboard_control/bitCount_reg[3]/C is not reached by a timing clock
+=======
 The clock pin keyboard/bitCount_reg[3]/C is not reached by a timing clock
+>>>>>>> main
 Related violations: <none>
 
 TIMING-17#113 Critical Warning
 Non-clocked sequential cell  
+<<<<<<< HEAD
+The clock pin keyboard_control/breakReceived_reg/C is not reached by a timing clock
+=======
 The clock pin keyboard/breakReceived_reg/C is not reached by a timing clock
+>>>>>>> main
 Related violations: <none>
 
 TIMING-17#114 Critical Warning
 Non-clocked sequential cell  
+<<<<<<< HEAD
+The clock pin keyboard_control/scancodeReady_reg/C is not reached by a timing clock
+=======
 The clock pin keyboard/scancodeReady_reg/C is not reached by a timing clock
+>>>>>>> main
 Related violations: <none>
 
 TIMING-17#115 Critical Warning
 Non-clocked sequential cell  
+<<<<<<< HEAD
+The clock pin keyboard_control/scancode_reg[0]/C is not reached by a timing clock
+=======
 The clock pin keyboard/scancode_reg[0]/C is not reached by a timing clock
+>>>>>>> main
 Related violations: <none>
 
 TIMING-17#116 Critical Warning
 Non-clocked sequential cell  
+<<<<<<< HEAD
+The clock pin keyboard_control/scancode_reg[1]/C is not reached by a timing clock
+=======
 The clock pin keyboard/scancode_reg[1]/C is not reached by a timing clock
+>>>>>>> main
 Related violations: <none>
 
 TIMING-17#117 Critical Warning
 Non-clocked sequential cell  
+<<<<<<< HEAD
+The clock pin keyboard_control/scancode_reg[2]/C is not reached by a timing clock
+=======
 The clock pin keyboard/scancode_reg[2]/C is not reached by a timing clock
+>>>>>>> main
 Related violations: <none>
 
 TIMING-17#118 Critical Warning
 Non-clocked sequential cell  
+<<<<<<< HEAD
+The clock pin keyboard_control/scancode_reg[3]/C is not reached by a timing clock
+=======
 The clock pin keyboard/scancode_reg[3]/C is not reached by a timing clock
+>>>>>>> main
 Related violations: <none>
 
 TIMING-17#119 Critical Warning
 Non-clocked sequential cell  
+<<<<<<< HEAD
+The clock pin keyboard_control/scancode_reg[4]/C is not reached by a timing clock
+=======
 The clock pin keyboard/scancode_reg[4]/C is not reached by a timing clock
+>>>>>>> main
 Related violations: <none>
 
 TIMING-17#120 Critical Warning
 Non-clocked sequential cell  
+<<<<<<< HEAD
+The clock pin keyboard_control/scancode_reg[5]/C is not reached by a timing clock
+=======
 The clock pin keyboard/scancode_reg[5]/C is not reached by a timing clock
+>>>>>>> main
 Related violations: <none>
 
 TIMING-17#121 Critical Warning
 Non-clocked sequential cell  
+<<<<<<< HEAD
+The clock pin keyboard_control/scancode_reg[6]/C is not reached by a timing clock
+=======
 The clock pin keyboard/scancode_reg[6]/C is not reached by a timing clock
+>>>>>>> main
 Related violations: <none>
 
 TIMING-17#122 Critical Warning
 Non-clocked sequential cell  
+<<<<<<< HEAD
+The clock pin keyboard_control/scancode_reg[7]/C is not reached by a timing clock
+=======
 The clock pin keyboard/scancode_reg[7]/C is not reached by a timing clock
+>>>>>>> main
 Related violations: <none>
 
 TIMING-17#123 Critical Warning

@@ -1,7 +1,11 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1.2 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+<<<<<<< HEAD
+| Date         : Tue Dec  6 12:09:17 2022
+=======
 | Date         : Tue Dec  6 08:07:37 2022
+>>>>>>> main
 | Host         : Gabrieli running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -report_unconstrained -file vga_timing_summary_routed.rpt -pb vga_timing_summary_routed.pb -rpx vga_timing_summary_routed.rpx -warn_on_violation
 | Design       : vga
@@ -73,7 +77,11 @@ Table of Contents
 
  There is 1 register/latch pin with no clock driven by root clock pin: clk50_reg/Q (HIGH)
 
+<<<<<<< HEAD
+ There are 4 register/latch pins with no clock driven by root clock pin: keyboard_control/scancodeReady_reg/Q (HIGH)
+=======
  There are 4 register/latch pins with no clock driven by root clock pin: keyboard/scancodeReady_reg/Q (HIGH)
+>>>>>>> main
 
 
 2. checking constant_clock (0)
@@ -1715,9 +1723,15 @@ Slack:                    inf
 Min Delay Paths
 --------------------------------------------------------------------------------------
 Slack:                    inf
+<<<<<<< HEAD
+  Source:                 keyboard_control/scancode_reg[1]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            keyboard_control/scancode_reg[0]/D
+=======
   Source:                 keyboard/scancode_reg[1]/C
                             (rising edge-triggered cell FDRE)
   Destination:            keyboard/scancode_reg[0]/D
+>>>>>>> main
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
   Data Path Delay:        0.261ns  (logic 0.146ns (55.949%)  route 0.115ns (44.051%))
@@ -1725,6 +1739,18 @@ Slack:                    inf
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
+<<<<<<< HEAD
+    SLICE_X86Y99         FDRE                         0.000     0.000 r  keyboard_control/scancode_reg[1]/C
+    SLICE_X86Y99         FDRE (Prop_fdre_C_Q)         0.146     0.146 r  keyboard_control/scancode_reg[1]/Q
+                         net (fo=7, routed)           0.115     0.261    keyboard_control/sel0[1]
+    SLICE_X89Y98         FDRE                                         r  keyboard_control/scancode_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 keyboard_control/scancode_reg[2]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            keyboard_control/scancode_reg[1]/D
+=======
     SLICE_X86Y99         FDRE                         0.000     0.000 r  keyboard/scancode_reg[1]/C
     SLICE_X86Y99         FDRE (Prop_fdre_C_Q)         0.146     0.146 r  keyboard/scancode_reg[1]/Q
                          net (fo=7, routed)           0.115     0.261    keyboard/sel0[1]
@@ -1735,6 +1761,7 @@ Slack:                    inf
   Source:                 keyboard/scancode_reg[2]/C
                             (rising edge-triggered cell FDRE)
   Destination:            keyboard/scancode_reg[1]/D
+>>>>>>> main
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
   Data Path Delay:        0.274ns  (logic 0.146ns (53.219%)  route 0.128ns (46.781%))
@@ -1742,6 +1769,18 @@ Slack:                    inf
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
+<<<<<<< HEAD
+    SLICE_X89Y98         FDRE                         0.000     0.000 r  keyboard_control/scancode_reg[2]/C
+    SLICE_X89Y98         FDRE (Prop_fdre_C_Q)         0.146     0.146 r  keyboard_control/scancode_reg[2]/Q
+                         net (fo=7, routed)           0.128     0.274    keyboard_control/sel0[2]
+    SLICE_X86Y99         FDRE                                         r  keyboard_control/scancode_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 keyboard_control/scancode_reg[3]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            keyboard_control/scancode_reg[2]/D
+=======
     SLICE_X89Y98         FDRE                         0.000     0.000 r  keyboard/scancode_reg[2]/C
     SLICE_X89Y98         FDRE (Prop_fdre_C_Q)         0.146     0.146 r  keyboard/scancode_reg[2]/Q
                          net (fo=7, routed)           0.128     0.274    keyboard/sel0[2]
@@ -1752,6 +1791,7 @@ Slack:                    inf
   Source:                 keyboard/scancode_reg[3]/C
                             (rising edge-triggered cell FDRE)
   Destination:            keyboard/scancode_reg[2]/D
+>>>>>>> main
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
   Data Path Delay:        0.328ns  (logic 0.146ns (44.452%)  route 0.182ns (55.548%))
@@ -1759,6 +1799,18 @@ Slack:                    inf
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
+<<<<<<< HEAD
+    SLICE_X87Y99         FDRE                         0.000     0.000 r  keyboard_control/scancode_reg[3]/C
+    SLICE_X87Y99         FDRE (Prop_fdre_C_Q)         0.146     0.146 r  keyboard_control/scancode_reg[3]/Q
+                         net (fo=7, routed)           0.182     0.328    keyboard_control/sel0[3]
+    SLICE_X89Y98         FDRE                                         r  keyboard_control/scancode_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 keyboard_control/breakReceived_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            keyboard_control/KDetected_reg[0]/D
+=======
     SLICE_X87Y99         FDRE                         0.000     0.000 r  keyboard/scancode_reg[3]/C
     SLICE_X87Y99         FDRE (Prop_fdre_C_Q)         0.146     0.146 r  keyboard/scancode_reg[3]/Q
                          net (fo=7, routed)           0.182     0.328    keyboard/sel0[3]
@@ -1769,6 +1821,7 @@ Slack:                    inf
   Source:                 keyboard/breakReceived_reg/C
                             (rising edge-triggered cell FDRE)
   Destination:            keyboard/KDetected_reg[0]/D
+>>>>>>> main
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
   Data Path Delay:        0.332ns  (logic 0.227ns (68.355%)  route 0.105ns (31.645%))
@@ -1776,6 +1829,20 @@ Slack:                    inf
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
+<<<<<<< HEAD
+    SLICE_X86Y98         FDRE                         0.000     0.000 r  keyboard_control/breakReceived_reg/C
+    SLICE_X86Y98         FDRE (Prop_fdre_C_Q)         0.128     0.128 r  keyboard_control/breakReceived_reg/Q
+                         net (fo=5, routed)           0.105     0.233    keyboard_control/sel0[8]
+    SLICE_X86Y98         LUT4 (Prop_lut4_I1_O)        0.099     0.332 r  keyboard_control/KDetected[0]_i_1/O
+                         net (fo=1, routed)           0.000     0.332    keyboard_control/KDetected[0]_i_1_n_0
+    SLICE_X86Y98         FDRE                                         r  keyboard_control/KDetected_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 keyboard_control/breakReceived_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            keyboard_control/KDetected_reg[1]/D
+=======
     SLICE_X86Y98         FDRE                         0.000     0.000 r  keyboard/breakReceived_reg/C
     SLICE_X86Y98         FDRE (Prop_fdre_C_Q)         0.128     0.128 r  keyboard/breakReceived_reg/Q
                          net (fo=5, routed)           0.105     0.233    keyboard/sel0[8]
@@ -1788,6 +1855,7 @@ Slack:                    inf
   Source:                 keyboard/breakReceived_reg/C
                             (rising edge-triggered cell FDRE)
   Destination:            keyboard/KDetected_reg[1]/D
+>>>>>>> main
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
   Data Path Delay:        0.333ns  (logic 0.227ns (68.150%)  route 0.106ns (31.850%))
@@ -1795,6 +1863,20 @@ Slack:                    inf
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
+<<<<<<< HEAD
+    SLICE_X86Y98         FDRE                         0.000     0.000 r  keyboard_control/breakReceived_reg/C
+    SLICE_X86Y98         FDRE (Prop_fdre_C_Q)         0.128     0.128 r  keyboard_control/breakReceived_reg/Q
+                         net (fo=5, routed)           0.106     0.234    keyboard_control/sel0[8]
+    SLICE_X86Y98         LUT4 (Prop_lut4_I1_O)        0.099     0.333 r  keyboard_control/KDetected[1]_i_1/O
+                         net (fo=1, routed)           0.000     0.333    keyboard_control/KDetected[1]_i_1_n_0
+    SLICE_X86Y98         FDRE                                         r  keyboard_control/KDetected_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 keyboard_control/bitCount_reg[1]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            keyboard_control/scancodeReady_reg/D
+=======
     SLICE_X86Y98         FDRE                         0.000     0.000 r  keyboard/breakReceived_reg/C
     SLICE_X86Y98         FDRE (Prop_fdre_C_Q)         0.128     0.128 r  keyboard/breakReceived_reg/Q
                          net (fo=5, routed)           0.106     0.234    keyboard/sel0[8]
@@ -1807,6 +1889,7 @@ Slack:                    inf
   Source:                 keyboard/bitCount_reg[1]/C
                             (rising edge-triggered cell FDRE)
   Destination:            keyboard/scancodeReady_reg/D
+>>>>>>> main
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
   Data Path Delay:        0.340ns  (logic 0.212ns (62.424%)  route 0.128ns (37.576%))
@@ -1814,12 +1897,21 @@ Slack:                    inf
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
+<<<<<<< HEAD
+    SLICE_X84Y98         FDRE                         0.000     0.000 r  keyboard_control/bitCount_reg[1]/C
+    SLICE_X84Y98         FDRE (Prop_fdre_C_Q)         0.167     0.167 r  keyboard_control/bitCount_reg[1]/Q
+                         net (fo=8, routed)           0.128     0.295    keyboard_control/bitCount_reg[1]
+    SLICE_X85Y98         LUT6 (Prop_lut6_I5_O)        0.045     0.340 r  keyboard_control/scancodeReady_i_1/O
+                         net (fo=1, routed)           0.000     0.340    keyboard_control/scancodeReady_i_1_n_0
+    SLICE_X85Y98         FDRE                                         r  keyboard_control/scancodeReady_reg/D
+=======
     SLICE_X84Y98         FDRE                         0.000     0.000 r  keyboard/bitCount_reg[1]/C
     SLICE_X84Y98         FDRE (Prop_fdre_C_Q)         0.167     0.167 r  keyboard/bitCount_reg[1]/Q
                          net (fo=8, routed)           0.128     0.295    keyboard/bitCount_reg[1]
     SLICE_X85Y98         LUT6 (Prop_lut6_I5_O)        0.045     0.340 r  keyboard/scancodeReady_i_1/O
                          net (fo=1, routed)           0.000     0.340    keyboard/scancodeReady_i_1_n_0
     SLICE_X85Y98         FDRE                                         r  keyboard/scancodeReady_reg/D
+>>>>>>> main
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
@@ -1861,9 +1953,15 @@ Slack:                    inf
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
+<<<<<<< HEAD
+  Source:                 keyboard_control/scancode_reg[5]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            keyboard_control/scancode_reg[4]/D
+=======
   Source:                 keyboard/scancode_reg[5]/C
                             (rising edge-triggered cell FDRE)
   Destination:            keyboard/scancode_reg[4]/D
+>>>>>>> main
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
   Data Path Delay:        0.366ns  (logic 0.167ns (45.673%)  route 0.199ns (54.327%))
@@ -1871,6 +1969,18 @@ Slack:                    inf
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
+<<<<<<< HEAD
+    SLICE_X88Y98         FDRE                         0.000     0.000 r  keyboard_control/scancode_reg[5]/C
+    SLICE_X88Y98         FDRE (Prop_fdre_C_Q)         0.167     0.167 r  keyboard_control/scancode_reg[5]/Q
+                         net (fo=4, routed)           0.199     0.366    keyboard_control/sel0[5]
+    SLICE_X88Y98         FDRE                                         r  keyboard_control/scancode_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 keyboard_control/scancode_reg[7]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            keyboard_control/scancode_reg[6]/D
+=======
     SLICE_X88Y98         FDRE                         0.000     0.000 r  keyboard/scancode_reg[5]/C
     SLICE_X88Y98         FDRE (Prop_fdre_C_Q)         0.167     0.167 r  keyboard/scancode_reg[5]/Q
                          net (fo=4, routed)           0.199     0.366    keyboard/sel0[5]
@@ -1881,6 +1991,7 @@ Slack:                    inf
   Source:                 keyboard/scancode_reg[7]/C
                             (rising edge-triggered cell FDRE)
   Destination:            keyboard/scancode_reg[6]/D
+>>>>>>> main
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
   Data Path Delay:        0.367ns  (logic 0.167ns (45.545%)  route 0.200ns (54.455%))
@@ -1888,10 +1999,17 @@ Slack:                    inf
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
+<<<<<<< HEAD
+    SLICE_X88Y98         FDRE                         0.000     0.000 r  keyboard_control/scancode_reg[7]/C
+    SLICE_X88Y98         FDRE (Prop_fdre_C_Q)         0.167     0.167 r  keyboard_control/scancode_reg[7]/Q
+                         net (fo=5, routed)           0.200     0.367    keyboard_control/scancode_reg_n_0_[7]
+    SLICE_X88Y98         FDRE                                         r  keyboard_control/scancode_reg[6]/D
+=======
     SLICE_X88Y98         FDRE                         0.000     0.000 r  keyboard/scancode_reg[7]/C
     SLICE_X88Y98         FDRE (Prop_fdre_C_Q)         0.167     0.167 r  keyboard/scancode_reg[7]/Q
                          net (fo=5, routed)           0.200     0.367    keyboard/scancode_reg_n_0_[7]
     SLICE_X88Y98         FDRE                                         r  keyboard/scancode_reg[6]/D
+>>>>>>> main
   -------------------------------------------------------------------    -------------------
 
 
