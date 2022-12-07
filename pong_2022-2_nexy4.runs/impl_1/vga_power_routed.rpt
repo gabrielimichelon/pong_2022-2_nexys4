@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.1.2 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date             : Tue Dec  6 10:01:14 2022
+| Date             : Tue Dec  6 12:09:17 2022
 | Host             : Gabrieli running 64-bit major release  (build 9200)
 | Command          : report_power -file vga_power_routed.rpt -pb vga_power_summary_routed.pb -rpx vga_power_routed.rpx
 | Design           : vga

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1.2 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date         : Tue Dec  6 10:00:37 2022
+| Date         : Tue Dec  6 12:08:45 2022
 | Host         : Gabrieli running 64-bit major release  (build 9200)
 | Command      : report_utilization -file vga_utilization_placed.rpt -pb vga_utilization_placed.pb
 | Design       : vga
