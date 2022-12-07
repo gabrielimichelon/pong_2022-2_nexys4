@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1670336104" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/vga.dcp">
+=======
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1670324738" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/vga.dcp">
+>>>>>>> main
   <File Type="PA-TCL" Name="vga.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="vga_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="vga_reports.tcl"/>

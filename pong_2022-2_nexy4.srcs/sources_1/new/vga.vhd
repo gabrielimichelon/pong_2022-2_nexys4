@@ -64,6 +64,13 @@ end component KeyboardController;
 --    );
 --end component seven_seg_display;
 
+component KeyboardController is
+    port (KeyboardClock : in  std_logic;
+          KeyboardData  : in  std_logic;
+          Detect        : out std_logic_vector(2 downto 0)
+          );
+  end component KeyboardController;
+
 signal clk50, clk25 		: STD_LOGIC;
 signal horizontal_counter   : STD_LOGIC_VECTOR (13 downto 0);
 signal vertical_counter     : STD_LOGIC_VECTOR (13 downto 0);

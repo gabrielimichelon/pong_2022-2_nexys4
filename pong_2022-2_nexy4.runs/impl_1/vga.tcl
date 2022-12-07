@@ -123,6 +123,10 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
+<<<<<<< HEAD
+=======
+  set_param checkpoint.writeSynthRtdsInDcp 1
+>>>>>>> main
   set_param chipscope.maxJobs 2
   set_param xicom.use_bs_reader 1
   open_checkpoint vga_routed.dcp

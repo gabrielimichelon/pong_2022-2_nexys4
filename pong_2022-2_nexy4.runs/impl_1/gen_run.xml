@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1670339272">
+=======
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1670324788">
+>>>>>>> main
   <File Type="ROUTE-PWR" Name="vga_power_routed.rpt"/>
   <File Type="PA-TCL" Name="vga.tcl"/>
   <File Type="BITSTR-MMI" Name="vga.mmi"/>
